@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Blue_Gray"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/myGuideLineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/myGuideLineTopUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55"
+        tools:ignore="DuplicateIds" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/myGuideLineTopUp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7"
+        tools:ignore="DuplicateIds" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/myGuideLineBottomDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/myGuideLineLift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/myGuideLineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button12"
+        style="@style/Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:elevation="16dp"
+        android:onClick="butSelcted"
+        app:layout_constraintBottom_toTopOf="@+id/myGuideLineTopUp"
+        app:layout_constraintEnd_toStartOf="@+id/myGuideLineLift"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/myGuideLineTop" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button13"
+        style="@style/Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:elevation="16dp"
+        android:onClick="butSelcted"
+        app:layout_constraintBottom_toTopOf="@+id/myGuideLineTopUp"
+        app:layout_constraintEnd_toStartOf="@+id/myGuideLineRight"
+        app:layout_constraintStart_toStartOf="@+id/myGuideLineLift"
+        app:layout_constraintTop_toTopOf="@+id/myGuideLineTop" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button14"
+        style="@style/Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:elevation="16dp"
+        android:onClick="butSelcted"
+        app:layout_constraintBottom_toTopOf="@+id/myGuideLineTopUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/myGuideLineRight"
+        app:layout_constraintTop_toTopOf="@+id/myGuideLineTop"
+        tools:ignore="MissingClass" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button15"
+        style="@style/Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:elevation="16dp"
+        android:onClick="butSelcted"
+        app:layout_constraintBottom_toTopOf="@+id/myGuideLineTopUp1"
+        app:layout_constraintEnd_toStartOf="@+id/myGuideLineLift"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/myGuideLineTopUp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button16"
+        style="@style/Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:elevation="16dp"
+        android:onClick="butSelcted"
+        app:layout_constraintBottom_toTopOf="@+id/myGuideLineTopUp1"
+        app:layout_constraintEnd_toStartOf="@+id/myGuideLineRight"
+        app:layout_constraintStart_toStartOf="@+id/myGuideLineLift"
+        app:layout_constraintTop_toTopOf="@+id/myGuideLineTopUp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button17"
+        style="@style/Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:elevation="16dp"
+        android:onClick="butSelcted"
+        app:layout_constraintBottom_toTopOf="@+id/myGuideLineTopUp1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/myGuideLineRight"
+        app:layout_constraintTop_toTopOf="@+id/myGuideLineTopUp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button18"
+        style="@style/Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:elevation="16dp"
+        android:onClick="butSelcted"
+        app:layout_constraintBottom_toTopOf="@+id/myGuideLineBottomDown"
+        app:layout_constraintEnd_toStartOf="@+id/myGuideLineLift"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/myGuideLineTopUp1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button19"
+        style="@style/Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:elevation="16dp"
+        android:onClick="butSelcted"
+        app:layout_constraintBottom_toTopOf="@+id/myGuideLineBottomDown"
+        app:layout_constraintEnd_toStartOf="@+id/myGuideLineRight"
+        app:layout_constraintStart_toStartOf="@+id/myGuideLineLift"
+        app:layout_constraintTop_toTopOf="@+id/myGuideLineTopUp1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button20"
+        style="@style/Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:elevation="16dp"
+        android:onClick="butSelcted"
+        app:layout_constraintBottom_toTopOf="@+id/myGuideLineBottomDown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/myGuideLineRight"
+        app:layout_constraintTop_toTopOf="@+id/myGuideLineTopUp1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
