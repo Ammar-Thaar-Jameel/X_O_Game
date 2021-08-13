@@ -71,14 +71,14 @@ class MainActivity : AppCompatActivity() {
         if (activePlayer == 1) {
                     val x=this.getString(R.string.app_name)
             btuClicked.background =
-                ContextCompat.getDrawable(this, R.drawable.ic_launcher_foreground)
+                ContextCompat.getDrawable(this, R.drawable.circle_ring)
             player1.add(cellId)
             activePlayer = 2
 
 
         } else {
             btuClicked.background =
-                ContextCompat.getDrawable(this, R.drawable.ic_baseline_airplanemode_inactive_24);
+                ContextCompat.getDrawable(this, R.drawable.closee);
             player2.add(cellId)
             activePlayer = 1
         }
