@@ -31,7 +31,20 @@ class MainActivity : AppCompatActivity() {
 
 
 
-   
+    private fun addCallbacks(v: View) {
+        val btuClicked = v as Button
+        if (activePlayer == 1) {
+            binding.button12.setOnClickListener {
+                var call = 1
+
+            }
+        } else if (activePlayer == 2) {
+
+        }
+    }
+    private fun add(v:View ){
+
+    }
 
     fun butSelcted(view: View) {
         val btuClicked = view as Button
@@ -56,7 +69,7 @@ class MainActivity : AppCompatActivity() {
     private fun playGame(cellId: Int, btuClicked: Button) {
 
         if (activePlayer == 1) {
-
+                    val x=this.getString(R.string.app_name)
             btuClicked.background =
                 ContextCompat.getDrawable(this, R.drawable.ic_launcher_foreground)
             player1.add(cellId)
@@ -108,11 +121,10 @@ class MainActivity : AppCompatActivity() {
 
 
 
-            if (winner == 1) {
-                Toast.makeText(this, " playar 1 Win ", Toast.LENGTH_LONG).show()
+        if (winner == 1) {
+            Toast.makeText(this, " playar 1 Win ", Toast.LENGTH_LONG).show()
 
-            }
-         else if (winner == 2) {
+        } else if (winner == 2) {
             Toast.makeText(this, "playar 2 Win  ", Toast.LENGTH_LONG).show()
 
         }
